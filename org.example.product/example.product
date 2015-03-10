@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="The Product" uid="productId" id="org.eclipse.platform.ide" version="1.0" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.example.feature1" version="1.0.0.qualifier"/>
+      <feature id="org.example.feature2" version="1.0.0.qualifier"/>
+   </features>
+
+
+</product>

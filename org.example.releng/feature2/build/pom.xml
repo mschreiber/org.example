@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.example</groupId>
+		<artifactId>org.example</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../../..</relativePath>
+	</parent>
+	<groupId>org.example</groupId>
+	<artifactId>org.example.feature2Build</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<description>POM that is responsible for building the whole feature2, including its plugins, the feature itself and the update site of that feature</description>
+
+	<repositories>
+		<repository>
+			<id>feature1</id>
+			<layout>p2</layout>
+			<url>http://linkToUpdateSiteOfFeature1/</url>
+		</repository>
+	</repositories>
+
+	<modules>
+		<module>../../../org.example.plugin2</module>
+		<module>../../../org.example.feature2</module>
+		<module>../repo</module>
+	</modules>
+</project>
